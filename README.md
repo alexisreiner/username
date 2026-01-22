@@ -56,11 +56,10 @@ I tested the script using both manual input and the provided `username-input` fi
 
 I also tested the script using input redirection with the command:
 
-```bash
-./username.sh < username-input
+-```bash
+-./username.sh < username-input
 
-
-## Challenges and Solutions
+## Challenges and Solutions:**
 One challenge I encountered was correctly writing the regular expression so that it enforced all the rules at the same time, especially the length requirement and the starting lowercase letter. I solved this by breaking the pattern into parts and testing different inputs until the regex behaved correctly.
 
 Another challenge was understanding how `grep -E`, exit codes, and output redirection work together. I learned how to use `>/dev/null 2>&1` to suppress output and rely on the command’s exit status instead of printed output to control program logic.
