@@ -12,7 +12,8 @@ echo ""
 
 while true; do
     echo -n "Enter a username: "
-    read username
+    read -r username
+
 
     if [[ $username =~ $regex ]]; then
         echo "Valid username. Thank you!"
